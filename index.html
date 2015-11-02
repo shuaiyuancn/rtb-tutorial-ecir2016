@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta name="description" content="Real-Time Bidding based Display Advertising: Mechanisms and Algorithms: A ECIR 2016 Tutorial by Jun Wang, Shuai Yuan, and Weinan Zhang">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>
+		Real-Time Bidding based Display Advertising: Mechanisms and Algorithms
+	</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">Real-Time Bidding based Display Advertising: Mechanisms and Algorithms</h1>
+          <h2 id="project_tagline">A ECIR 2016 Tutorial by Jun Wang, Shuai Yuan, and Weinan Zhang</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>This website is for the ECIR 2016 Tutorial: Real-Time Bidding based Display Advertising: Mechanisms and Algorithms.</p>
+
+<p>The tutorial will be given by <a href="http://web4.cs.ucl.ac.uk/staff/jun.wang/blog/about">Dr. Jun Wang</a>, <a href="http://yuan-shuai.info">Dr. Shuai Yuan</a>, and <a href="http://www0.cs.ucl.ac.uk/staff/Weinan.Zhang">Weinan Zhang</a>in March, 2016 during the <a href="http://ecir2016.dei.unipd.it/">ECIR conference</a> in Padua, Italy.</p>
+
+<h1>
+	<a id="history" class="anchor" href="#history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tutorial history
+</h1>
+
+
+<ul>
+	<li>
+		<p><a href="http://tutorial-wsdm-2015.computational-advertising.org">WSDM 2015</a>, given by Dr. Jun Wang, Dr. Shuai Yuan with invited speaker Dr. Kaihua Cui from AppNexus</p>
+	</li>
+	<li>
+		<p><a href="http://tutorial-cikm-2013.computational-advertising.org">CIKM 2013</a>, given by Dr. Jun Wang, Dr. Shuai Yuan with invited speaker Dr. Xuehua Shen from iPinyou and Dr. Samuel Seljan from AppNexus</p>
+	</li>
+</ul>
+
+<hr />
+
+<h1>
+<a id="brief-introduction" class="anchor" href="#brief-introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Brief introduction</h1>
+
+<p>
+	In display and mobile advertising, the most significant development in recent years is the Real-Time Bidding (RTB), which allows selling and buying in real-time one ad impression at a time. The ability of making impression level bid decision and targeting to an individual user in real-time has fundamentally changed the landscape of the digital media.  The further demand for automation, integration and optimisation in RTB brings new research opportunities in the IR fields, including information matching with economic constraints, CTR prediction, user behaviour targeting and profiling, personalised advertising, and attribution and evaluation methodologies. In this tutorial, teamed up with presenters from both the industry and academia, we aim to bring the insightful knowledge from the real-world systems, and to provide an overview of the fundamental mechanism and algorithms with the focus on the IR context. We will also introduce to IR researchers a few datasets recently made available so that they can get hands-on quickly and enable the said research.
+</p>
+
+<hr />
+
+<h1>
+<a id="outline" class="anchor" href="#outline" aria-hidden="true"><span class="octicon octicon-link"></span></a>Outline</h1>
+
+<ul>
+	<li>
+		<p>Background</p>
+		<ul>
+			<li><p>The history and evolution of computational advertising</p></li>
+			<li><p>The emergence of Real-Time Bidding</p></li>
+		</ul>
+	</li>
+	<li>
+		<p>The Framework and platform</p>
+		<ul>
+			<li><p>Auction mechanisms</p></li>
+			<li><p>The current eco-system of RTB</p></li>
+			<li><p>Mining RTB auctions</p></li>
+		</ul>
+	</li>
+	<li>
+		<p>Research problems and techniques</p>
+		<ul>
+			<li><p>Click-through rate and conversion prediction</p></li>
+			<li><p>Dynamic pricing and information matching with economics constraints</p></li>
+			<li><p>Attribution models</p></li>
+			<li><p>Fraud detection</p></li>
+		</ul>
+	</li>
+	<li>
+		<p>Datasets and evaluations</p>
+		<ul>
+			<li><p>Datasets and evaluation methodologies</p></li>
+			<li><p>Live test and APIs</p></li>
+			<li><p>Attribution models</p></li>
+			<li><p>Fraud detection</p></li>
+		</ul>
+	</li>
+	<li><p>Panel discussion: research challenges and opportunities for the IR community</p></li>
+</ul>
+
+<hr />
+
+<h1>
+<a id="speakers" class="anchor" href="#speakers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Speakers</h1>
+
+<img src='http://tutorial-cikm-2013.computational-advertising.org/img/j.wang.jpg' class='speaker_photo' />
+
+<p><strong>Dr. Jun Wang</strong> is a Senior Lecturer (Associate Professor) in University College London. He has published over 70 research papers in leading journals and conference proceedings including ACM Trans. on Information Systems, IEEE Trans. on Multimedia, ACM Multimedia System Journal, WWW, CIKM, ACM SIGIR, SIGMM. He received the Best Doctoral Consortium award in ACM SIGIR06 for his work on collaborative filtering, the Best Paper Prize in ECIR09 for his work on applying Modern Portfolio Theory of Finance (Mean-variance Analysis) to document ranking in Information Retrieval, and the Best Paper Prize in ECIR12 for top-k retrieval modelling. He has extensive experiences in giving tutorials on top conferences: his recent tutorials about risk management and portfolio theory of information retrieval were given in CIKM2011 and ECIR2011. </p>
+
+<img src='http://tutorial-cikm-2013.computational-advertising.org/img/s.yuan.jpg' class='speaker_photo' />
+
+<p><strong>Dr. Shuai Yuan</strong> recently received his Ph.D. from University College London and is now a Data Scientist at MediaGamma. He has been working on mathematical models of online advertising with a number of companies such as AppNexus, Advance International Media, Bright, Dot.tk, and Miaozhen. He has the background of information retrieval, data mining, machine learning, and economic theories; his research interests on computational advertising have focused on supply side optimisation in RTB, bidding algorithms, and statistical arbitrage. Shuai Yuan has published several papers in top-tier venues including CIKM, SIGKDD, and ADKDD. Among them, he published the first empirical study on RTB auctions. He and his colleagues won the third season of iPinyou Global Bidding Algorithm Competition in 2013, and the Best Paper Award of ADKDD 2014. He also contributes to an open advertising dataset project.</p>
+
+<img src='images/w.zhang.png' class='speaker_photo' />
+
+<p><strong>Weinan Zhang</strong> is completing his Ph.D. in University College London. His research interests include machine learning, dynamic optimisation and their applications in RTB based display advertising and recommender systems. Particularly, He is focusing on the research of optimal DSP bidding strategies for RTB display advertising. He is also interested in deep learning models and has developed several domain-specified DNNs for predicting users' online commercial behaviours. Weinan Zhang has published more than 20 papers in top international conferences including RecSys, SIGKDD, CIKM, SIGIR, and WI. He also has made publications in well-recognised journals including CoRR, IPM, and JMLR. He and Dr. Shuai Yuan won the final session of iPinyou Global Bidding Algorithm Competition in 2013. <br /> <br /> <br /></p>
+
+<hr />
+
+<h1>
+<a id="relevant-tutorials" class="anchor" href="#relevant-tutorials" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relevant Tutorials</h1>
+
+<ul>
+<li><p>CIKM 2009, IJCAI 2009, EC 2008, and ACL-HLT 2008, Introduction to Computational Advertising, Andrei Broder, Vanja Josifovski, and Evgeniy Gabrilovich.</p></li>
+<li><p>KDD 2009, Statistical Challenges in Computational Advertising, Deepayan Chakrabarti and Deepak Agarwal.</p></li>
+<li><p>SIGIR 2010, CIKM 2011, Information Retrieval Challenges in Computational Advertising, Andrei Broder, Evgeniy Gabrilovich, and Vanja Josifovski.</p></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Real-Time Bidding based Display Advertising: Mechanisms and Algorithms maintained by <a href="https://github.com/shuaiyuancn">shuaiyuancn</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-21964667-5");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
